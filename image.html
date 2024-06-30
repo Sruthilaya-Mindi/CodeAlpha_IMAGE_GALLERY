@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="image.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="full" id="img1">
+            <img src="1.jpg" id="imgclick">
+            <span class="close" onclick="closeimg()"><button class="btn"><i class="fa fa-close"></i></button></span>
+            <span class="prev" onclick="changeImg(-1)">&#10094;</span>
+            <span class="next" onclick="changeImg(1)">&#10095;</span>
+        </div>
+        <div class="heading">
+            <h1>Photo <span>Gallery</span></h1>
+        </div>
+        <div class="images">
+            <div class="gallery" data-column="0">
+                <img src="1a.jpg" onclick="openimg(this.src, 0, 0)">
+                <img src="2a.webp" onclick="openimg(this.src, 1, 0)">
+                <img src="3a.jpg" onclick="openimg(this.src, 2, 0)">
+                <img src="4.jpg" onclick="openimg(this.src, 3, 0)">
+                <img src="13.jpg" onclick="openimg(this.src, 4, 0)">
+                <img src="14.jpg" onclick="openimg(this.src, 5, 0)">
+                <img src="29.jpg" onclick="openimg(this.src, 6, 0)">
+            </div>
+            <div class="gallery" data-column="1">
+                <img src="15.jpg" onclick="openimg(this.src, 0, 1)">
+                <img src="5.jpg" onclick="openimg(this.src, 1, 1)">
+                <img src="6a.jpg" onclick="openimg(this.src, 2, 1)">
+                <img src="7.jpg" onclick="openimg(this.src, 3, 1)">
+                <img src="g1.jpg" onclick="openimg(this.src, 4, 1)">
+                <img src="19a.jpg" onclick="openimg(this.src, 5, 1)">
+                <img src="28.jpg" onclick="openimg(this.src, 6, 1)">
+            </div>
+            <div class="gallery" data-column="2">
+                <img src="18.jpg" onclick="openimg(this.src, 0, 2)">
+                <img src="17.jpg" onclick="openimg(this.src, 1, 2)">
+                <img src="9.jpg" onclick="openimg(this.src, 2, 2)">
+                <img src="10.jpg" onclick="openimg(this.src, 3, 2)">
+                <img src="11.jpg" onclick="openimg(this.src, 4, 2)">
+                <img src="16.png" onclick="openimg(this.src, 5, 2)">
+                <img src="30.jpg" onclick="openimg(this.src, 6, 2)">
+            </div>
+            <div class="gallery" data-column="3">
+                <img src="26.jpg" onclick="openimg(this.src, 0, 3)">
+                <img src="w.jpg" onclick="openimg(this.src, 1, 3)">
+                <img src="20.jpg" onclick="openimg(this.src, 2, 3)">
+                <img src="21.jpg" onclick="openimg(this.src, 3, 3)">
+                <img src="22.jpg" onclick="openimg(this.src, 4, 3)">
+                <img src="23.webp" onclick="openimg(this.src, 5, 3)">
+                <img src="24.jpg" onclick="openimg(this.src, 6, 3)">
+                <img src="25.jpg" onclick="openimg(this.src, 7, 3)">
+            </div>
+        </div>
+        <div class="but1">
+            <a href="#">See More</a>
+        </div>
+    </div>
+    <script src="image.js"></script>
+</body>
+</html>
